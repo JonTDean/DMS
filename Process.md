@@ -17,7 +17,7 @@
 		("DATA_A %s DATA_B" % (" | " OR " , " OR " "))
 		```
 
-	2. Date has two types `MM-DD-YYYY` and `MM/DD/YYYY`. The output should be of a single type denoting `MM/DD/YYYY`.
+	2. Date has two types `M-D-YYYY` and `M/D/YYYY`. The output should be of a single type denoting `M/D/YYYY`.
 
 
 	3. Our data is not uniform and differs based on the delimiter value.
@@ -42,6 +42,11 @@ Things change starting at the 3rd index [2]. In the case of our csv file, we los
 The way the data exists across the files is different. M and F exist in the psv and ssv files, represented as Male and Female respectively inside of comma.
 
 Another thing to check for is the placement of `FavoriteColor` in accordance to `DOB`. In PSV/CSV it is prior and in SSV it is last.
+
+The output exists as:
+
+``{last name}, {first name}, {gender}, {date of birth}, {favorite color}``
+where DOB === M/D/YYYY
 
 ----
 

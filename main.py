@@ -1,16 +1,32 @@
-def read_file(filename):
+from src import parser;
+
+cleaned_Data = [];
+
+# Read data from specified file
+def read_File(filename):
 	with open(f'data/{filename}.txt', 'r') as f:
-		return f.read()
+		return f.read();
 	
-psv = read_file('pipe').split('\n');
-csv = read_file('comma').split('\n');
-ssv = read_file('space').split('\n');
+# Convert the read data into a list
+# of strings that are indexed by <"\n">
+# each line represents the next index essentially
+def line_List(filename):
+	return read_File(filename).split('\n');
 
-# Start on PSV first beacuse its first in the file
+# Clean and parse data from the
+# data folder located at the root.
+def parser_Engine():
 
-# Start on CSV
+	# Start on Pipe Separated Values first 
+	[parser.parse_PSV(line ,cleaned_Data) for line in line_List('pipe')];
+	
+	# Start on CSV next
+	[parser.parse_CSV(line, cleaned_Data) for line in line_List('comma')];
+	
+	# Start on SSV Start on the SSV last
+	[parser.parse_SSV(line, cleaned_Data) for line in line_List('space')];
 
-# Start on SSV Start on the SSV last because 
-# we want to call the ssv parser when 
-# neither tabs nor commas are present
+parser_Engine();
 
+# print("CLEANED DATA: \n", cleaned_Data);
+[print(l) for l in cleaned_Data];
