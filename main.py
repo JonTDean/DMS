@@ -15,7 +15,10 @@ print(fs);
 # Second Sort Output
 print("Output 2: ");
 ss = sorters.secondSort(cleaned_List);
-# print(ss);
-[print(l) for l in ss];
+print(ss);
+# [print(l) for l in ss];
 
 # Third Sort Output
+print("Output 3: ");
+ts = sorters.thirdSort(cleaned_List);
+[print(l) for l in ts]
