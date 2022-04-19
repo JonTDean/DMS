@@ -1,4 +1,5 @@
 from operator import itemgetter
+from sorters import firstSort
 from src import files;
 
 # Store all of the cleaned string lines
@@ -8,11 +9,11 @@ cleaned_List = [];
 # Run the parser process
 files.extract_Data(cleaned_List);
 
-
+# First Sort Output
 print("Output 1: ");
+fs = firstSort(cleaned_List);
+print(fs);
 
-firstSort(cleaned_List);
+# Second Sort Output
 
-# # Sort 2 - by birth date, ascending then by last name ascending Sort 3 - by last name, descending
-# print("Output 2: ");
-# print("Output 3: ");
+# Third Sort Output

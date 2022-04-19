@@ -7,9 +7,13 @@ def firstSort(lst):
 	);
 
 # Sort 2 -
+# by birth date, ascending 
+# then by last name ascending 
 # 
 # def secondSort(lst):
 
 # Sort 3 -
-# Madness Sort
+# 1. Lastnames are Z to A
+# 2. Firstnames are A to Z
+# 3. DOBs are Youngest to Oldest
 # def thirdSort(lst):

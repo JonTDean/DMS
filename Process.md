@@ -59,9 +59,13 @@ Sort Output 1:
 - Sort 1
 	1. Females First Males Last
 	2. Sort each group by name order
-		- In order to do this I need to split
-		- the genders into two groups and
-		- then sort the groups by lastName Ascending
+
+		1.1 In order to do this I need to split
+
+		1.2 the genders into two groups and
+
+		1.3 then sort the groups by lastName Ascending
+
 	3. The result should look like: 
 		- Hingis Martina Female 4/2/1979 Green
 		- Kelly Sue Female 7/12/1959 Pink
@@ -73,19 +77,39 @@ Sort Output 1:
 		- Bouillon Francis Male 6/3/1975 Blue
 		- Smith Steve Male 3/3/1985 Red
 
-Seles Monica Female 12/2/1973 Black
-Kournikova Anna Female 6/3/1975 Red
-Kelly Sue Female 7/12/1959 Pink
-Hingis Martina Female 4/2/1979 Green
-Smith Steve Male 3/3/1985 Red
-Bouillon Francis Male 6/3/1975 Blue
-Bonk Radek Male 6/3/1975 Green
-Bishop Timothy Male 4/23/1967 Yellow
-Abercrombie Neil Male 2/13/1943 Tan
 - Sort 2
+	1. Sort functionality
+		
+		1.1 Last Name (Asc): A to Z 
+		
+		1.2 Birth Date (Asc): Oldest to Youngest
+			
+		- So this one was a bit confusing however, the main principal they seem to want is to first sort by A to Z and *then* sort by oldest to youngest. Analyze and Solve.
+				
+	
+	2. The results should look like:
+		- Abercrombie Neil Male 2/13/1943 Tan
+		- Kelly Sue Female 7/12/1959 Pink
+		- Bishop Timothy Male 4/23/1967 Yellow
+		- Seles Monica Female 12/2/1973 Black
+		- Bonk Radek Male 6/3/1975 Green
+		- Bouillon Francis Male 6/3/1975 Blue
+		- Kournikova Anna Female 6/3/1975 Red
+		- Hingis Martina Female 4/2/1979 Green
+		- Smith Steve Male 3/3/1985 Red
 
 - Sort 3
-	1. seems to be sort by last name, then first name, then DOB. 
-		1. Lastnames are Z to A
-		2. Firstnames are A to Z
-		3. DOBs are Youngest to Oldest  
+	1. Sort by last name
+
+		1.1. Lastnames are Z to A
+
+	2. The results should look like:
+		- Smith Steve Male 3/3/1985 Red
+		- Seles Monica Female 12/2/1973 Black
+		- Kournikova Anna Female 6/3/1975 Red
+		- Kelly Sue Female 7/12/1959 Pink
+		- Hingis Martina Female 4/2/1979 Green
+		- Bouillon Francis Male 6/3/1975 Blue
+		- Bonk Radek Male 6/3/1975 Green
+		- Bishop Timothy Male 4/23/1967 Yellow
+		- Abercrombie Neil Male 2/13/1943 Tan
