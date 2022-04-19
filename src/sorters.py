@@ -10,10 +10,19 @@ def firstSort(lst):
 # by birth date, ascending 
 # then by last name ascending 
 # 
-# def secondSort(lst):
+def secondSort(lst):
+	return sorted(
+		lst,
+		key=lambda line: (line.split(" ")[3], line.split(" ")[0]),
+	);
 
 # Sort 3 -
 # 1. Lastnames are Z to A
 # 2. Firstnames are A to Z
 # 3. DOBs are Youngest to Oldest
-# def thirdSort(lst):
+def thirdSort(lst):
+	return sorted(
+		lst,
+		key=lambda line: line.split(" ")[0],
+		reverse=True,
+	);

@@ -84,7 +84,7 @@ Sort Output 1:
 		
 		1.2 Birth Date (Asc): Oldest to Youngest
 			
-		- So this one was a bit confusing however, the main principal they seem to want is to first sort by A to Z and *then* sort by oldest to youngest. Analyze and Solve.
+		- So this one was a bit confusing on the wording however, the main principal they seem to want is to first sort by A to Z and *then* sort by oldest to youngest, not sort by A to Z *and* sort by oldest to youngest. Analyze and Solve.
 				
 	
 	2. The results should look like:
