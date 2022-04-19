@@ -1,3 +1,7 @@
+# Thought Process
+
+## What is the problem? and how do I solve this?
+
 1. Read the incoming data
 
 		- The first file is a csv
@@ -29,4 +33,17 @@
 
 3. Transform and multiplex the data 
 
+Due to the different (x)sv files having different data patterns, the approach I will be choosing will be to break down the design of each string and extract the patterns that exist. 
 
+Ex: [0] === lastname && [1] === firstname exist in all cases
+
+Things change starting at the 3rd index [2]. In the case of our csv file, we lose the middle initial existing at [2]. 
+
+The way the data exists across the files is different. M and F exist in the psv and ssv files, represented as Male and Female respectively inside of comma.
+
+Another thing to check for is the placement of `FavoriteColor` in accordance to `DOB`. In PSV/CSV it is prior and in SSV it is last.
+
+----
+
+### Process 
+At the moment I will design the functionality to be delimiter specific, since the pattern itself is delimiter specific. By attaching my logic to directly to the delimiter I'm indirectly attaching the logic directly to the pattern, which won't be a problem due to the static nature of the dataset itself. I.e. Firstnames are always strings, lastnames are always strings, etc. and the pattern in which they exist is always the same, allowing the logic to attach directly to the idemopotent pattern of the dataset.
