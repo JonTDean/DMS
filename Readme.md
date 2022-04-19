@@ -25,16 +25,16 @@ By running this command we `log the output to the terminal`, and in addition to 
 1. In order to run our tests, please make sure the requirements text is installed as we are using py.test to run the tests.
 
 ```zsh 
-python3 -m pytest tests/* --no-header -v
+python3 -m pytest --no-header -v
 ```
 
 2.  In order to run the specified tests we can instead run the following command:
 
 ```zsh
-python3 -m pytest tests/x_Sort.test.py --no-header -v
+python3 -m pytest tests/<x>_Sort_test.py --no-header -v
 ```
 
-where `x` is any of the listed:
+where `<x>` is any of the listed:
 
 - `first` for the First Sort
 - `second` for the Second Sort
