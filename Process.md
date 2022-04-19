@@ -52,3 +52,31 @@ where DOB === M/D/YYYY
 
 ### Process 
 At the moment I will design the functionality to be delimiter specific, since the pattern itself is delimiter specific. By attaching my logic to directly to the delimiter I'm indirectly attaching the logic directly to the pattern, which won't be a problem due to the static nature of the dataset itself. I.e. Firstnames are always strings, lastnames are always strings, etc. and the pattern in which they exist is always the same, allowing the logic to attach directly to the idemopotent pattern of the dataset.
+
+The data is now cleaned up and I plan to create the sorting methods. 
+
+Sort Output 1: 
+- Sort 1
+	1. Females First Males Last
+	2. Sort each group by name order
+		- In order to do this I need to split
+		- the genders into two groups and
+		- then sort the groups by lastName Ascending
+	3. The result should look like: 
+		- Hingis Martina Female 4/2/1979 Green
+		- Kelly Sue Female 7/12/1959 Pink
+		- Kournikova Anna Female 6/3/1975 Red
+		- Seles Monica Female 12/2/1973 Black
+		- Abercrombie Neil Male 2/13/1943 Tan
+		- Bishop Timothy Male 4/23/1967 Yellow
+		- Bonk Radek Male 6/3/1975 Green
+		- Bouillon Francis Male 6/3/1975 Blue
+		- Smith Steve Male 3/3/1985 Red
+
+- Sort 2
+
+- Sort 3
+	1. seems to be sort by last name, then first name, then DOB. 
+		1. Lastnames are Z to A
+		2. Firstnames are A to Z
+		3. DOBs are Youngest to Oldest  
