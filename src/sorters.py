@@ -2,7 +2,7 @@
 # GENDER female === 1 male === -1
 # LN Ascending
 # (FM->LN (ASC)) Sort
-def firstSort(lst):
+def first_Sort(lst):
 	return sorted(
 		lst, # Sort by -> Gender			  Last Name 
 		key=lambda line: (line.split(" ")[2], line.split(" ")[0]),
@@ -12,7 +12,7 @@ def firstSort(lst):
 # Birth Date, Ascending 
 # Last Name, Ascending
 # (DOB_YYYY (ASC) -> THEN (LN (ASC))) Sort 
-def secondSort(lst):
+def second_Sort(lst):
 	return sorted(
 		sorted(
 			lst,
@@ -24,7 +24,7 @@ def secondSort(lst):
 # Sort 3 -
 # Lastnames are Z to A
 # (LN DESC) Sort
-def thirdSort(lst):
+def third_Sort(lst):
 	return sorted(
 		lst,
 		key=lambda line: line.split(" ")[0],				# Sort by Last Name Descending

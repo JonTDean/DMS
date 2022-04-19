@@ -39,18 +39,18 @@ Ex: [0] === lastname && [1] === firstname exist in all cases
 
 Things change starting at the 3rd index [2]. In the case of our csv file, we lose the middle initial existing at [2]. 
 
-The way the data exists across the files is different. M and F exist in the psv and ssv files, represented as Male and Female respectively inside of comma.
+The way the data exists across the files is different. M and F exist in the psv and ssv files, represented as Male and Female respectively inside of csv.
 
-Another thing to check for is the placement of `FavoriteColor` in accordance to `DOB`. In PSV/CSV it is prior and in SSV it is last.
+Another thing to check for is the placement of `FavoriteColor` in accordance to `DOB`. In PSV/CSV `FavoriteColor` is prior to `DOB` and in SSV it is after.
 
-The output exists as:
+Based on what is known our Line by line output standard should exist as:
 
 ``{last name}, {first name}, {gender}, {date of birth}, {favorite color}``
 where DOB === M/D/YYYY
 
 ----
 
-### Process 
+## Process 
 At the moment I will design the functionality to be delimiter specific, since the pattern itself is delimiter specific. By attaching my logic to directly to the delimiter I'm indirectly attaching the logic directly to the pattern, which won't be a problem due to the static nature of the dataset itself. I.e. Firstnames are always strings, lastnames are always strings, etc. and the pattern in which they exist is always the same, allowing the logic to attach directly to the idemopotent pattern of the dataset.
 
 The data is now cleaned up and I plan to create the sorting methods. 
